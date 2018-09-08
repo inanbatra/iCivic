@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+tools:context=".TagsFlow" >
+
+    <Button
+        android:id="@+id/parks"
+        android:layout_width="202dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="125dp"
+        android:fontFamily="sans-serif-smallcaps"
+        android:text="Our Parks"
+        android:textSize="25dp" />
+
+    <Button
+        android:id="@+id/city"
+        android:layout_width="202dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="214dp"
+        android:fontFamily="sans-serif-smallcaps"
+        android:text="Our City"
+        android:textSize="25dp" />
+
+    <Button
+        android:id="@+id/home"
+        android:layout_width="202dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="145dp"
+        android:fontFamily="sans-serif-smallcaps"
+        android:text="My Home"
+        android:textSize="25dp" />
+
+    <!--When User hits "My Home"-->
+
+    <Button
+        android:id="@+id/fire"
+        android:layout_width="202dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="179dp"
+        android:fontFamily="sans-serif-smallcaps"
+        android:text="Fire Safety"
+        android:textSize="25dp" />
+
+    <Button
+        android:id="@+id/sewage"
+        android:layout_width="202dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="152dp"
+        android:fontFamily="sans-serif-smallcaps"
+        android:text="Water or Sewage"
+        android:textSize="25dp" />
+
+
+
+    <!--<TextView-->
+<!--android:id="@+id/alert"-->
+<!--android:layout_width="match_parent"-->
+<!--android:layout_height="match_parent"-->
+<!--android:text=""-->
+<!--android:textColor="#000000"-->
+<!--android:textSize="25sp" />-->
+
+</RelativeLayout>
+
