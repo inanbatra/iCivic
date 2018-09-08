@@ -26,5 +26,13 @@
         android:layout_marginLeft="200px"
         />
 
+    <Button
+        android:id="@+id/skip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Skip to Home"
+        tools:layout_editor_absoluteX="133dp"
+        tools:layout_editor_absoluteY="354dp" />
+
 
 </android.support.constraint.ConstraintLayout>
