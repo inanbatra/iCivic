@@ -24,4 +24,5 @@ public class Report{
   public User getUser() {
     return this.reporter;
   }
+
 }
