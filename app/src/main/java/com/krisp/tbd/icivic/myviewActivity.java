@@ -17,17 +17,14 @@ public class myviewActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_myview);
 
-        TextView text = (TextView) findViewById(R.id.textView2);
-        text.setOnClickListener(new View.OnClickListener(){
-            public void onClick(View w){
-                Intent intent = new Intent(myviewActivity.this, TagsFlow.class);
-                startActivity(intent);
+        Button btn = findViewById(R.id.imageView4);
+
+        btn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent myintent = new Intent(myviewActivity.this, TagsFlow.class);
+                startActivity(myintent);
             }
         });
-
-
     }
-
-
-
 }
