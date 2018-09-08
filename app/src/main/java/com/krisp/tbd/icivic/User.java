@@ -5,7 +5,7 @@ public class User {
     private String phoneNumber;
     private String emailAddress;
 
-    public User (String name, phoneNumber, emailAddress) {
+    public User (String name, String phoneNumber, String emailAddress) {
         this.name = name;
         this.phoneNumber = phoneNumber;
         this.emailAddress = emailAddress;
