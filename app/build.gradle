@@ -30,7 +30,7 @@ dependencies {
     implementation 'com.google.firebase:firebase-core:16.0.1'
     implementation 'com.google.firebase:firebase-auth:16.0.3'
     implementation 'com.android.support:design:28.0.0-rc02'
-    implementation 'com.android.support:appcompact-v7:27.1.1'
+    implementation 'com.android.support:appcompact-v7:26.1.0'
     implementation 'com.android.support:design27.1.1'
 }
 
