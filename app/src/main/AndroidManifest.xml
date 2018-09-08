@@ -32,11 +32,6 @@
             android:label="@string/title_activity_login" />
         <activity android:name=".Register" />
         <activity android:name=".myviewActivity" />
-        <activity
-            android:name=".FullscreenActivity"
-            android:configChanges="orientation|keyboardHidden|screenSize"
-            android:label="@string/title_activity_fullscreen"
-            android:theme="@style/FullscreenTheme"></activity>
-    </application>
+</application>
 
 </manifest>

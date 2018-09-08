@@ -26,7 +26,7 @@ public class Register extends AppCompatActivity {
 
     private static final String TAG = "PhoneAuth";
 
-    
+
     private EditText phoneText;
     private EditText codeText;
     private Button verifyButton;
