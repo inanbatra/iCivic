@@ -23,6 +23,17 @@ public class WelcomeActivity extends AppCompatActivity {
                 startActivity(myintent);
             }
         });
+
+        //skip button temporary
+        Button skip = (Button)findViewById(R.id.skip);
+
+        btn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(WelcomeActivity.this, myviewActivity.class);
+                startActivity(intent);
+            }
+        });
     }
 
 
