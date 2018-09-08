@@ -7,7 +7,6 @@ public class Report{
   public Report(String type, User user,Image image) {
     this.type = type;
     this.reporter = user;
-    this.image = image;
   }
 
   public void setType(String t) {
