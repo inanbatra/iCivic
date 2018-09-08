@@ -32,10 +32,6 @@
             android:label="@string/title_activity_login" />
         <activity android:name=".Register" />
         <activity android:name=".myviewActivity" />
-        <activity
-            android:name=".homemenu"
-            android:label="@string/title_activity_homemenu"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 
 </manifest>
