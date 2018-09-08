@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "138773456989",
+    "firebase_url": "https://icivic-37ce6.firebaseio.com",
+    "project_id": "icivic-37ce6",
+    "storage_bucket": "icivic-37ce6.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:138773456989:android:ceb50b8fa227b774",
+        "android_client_info": {
+          "package_name": "com.krisp.tbd.icivic"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "138773456989-2nt6n88cl4c9epl03uqf2hd65kqcbqhr.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA7R3E_9MUADcJkR9qJsJKFbB0z7goVmvU"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

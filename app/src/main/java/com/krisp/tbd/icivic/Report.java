@@ -4,7 +4,7 @@ public class Report{
   private String type;
   private User reporter;
 
-  public Report(String type, User user,Image image) {
+  public Report(String type, User user) {
     this.type = type;
     this.reporter = user;
   }
