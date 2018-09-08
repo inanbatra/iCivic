@@ -28,7 +28,7 @@ public class TagsFlow extends AppCompatActivity implements View.OnClickListener 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.sample_tags_flow);
+        setContentView(R.layout.tags_flow);
         fork0 = (Button) findViewById(R.id.parks);
         fork1 = (Button) findViewById(R.id.city);
         fork2 = (Button) findViewById(R.id.home);
