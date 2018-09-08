@@ -39,13 +39,13 @@ public class TagsFlow extends AppCompatActivity implements View.OnClickListener 
     public void onClick(View v) { //when user clicks on fork0 or fork1, this method executed
         if (v.getId() == R.id.parks) {
             //code to execute
-            txtView.setText("Park!");
+
 
 
         }
         if (v.getId() == R.id.city) {
             //code to execute
-            txtView.setText("not park:(");
+
         }
 
         if (v.getId() == R.id.home) {
