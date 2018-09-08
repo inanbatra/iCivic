@@ -30,7 +30,7 @@ public class WelcomeActivity extends AppCompatActivity {
         skip.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent change = new Intent(WelcomeActivity.this, myviewActivity.class);
+                Intent change = new Intent(WelcomeActivity.this, Register.class);
                 startActivity(change);
             }
         });
