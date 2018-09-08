@@ -16,12 +16,18 @@ public class myviewActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_myview);
 
+        Button bn = (Button)findViewById(R.id.button3);
+
+        bn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent myintent = new Intent(myviewActivity.this, TagsFlow.class);
+                startActivity(myintent);
+            }
+        });
+
     }
 
-    private void dispatchTakePictureIntent(){
-        Intent takePictureIntent = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
-        if (takePictureIntent.resolveActivity(getPackageManager() != null)) {
-            startActivityForResult(takeP);
-        }
-    }
+
+
 }
