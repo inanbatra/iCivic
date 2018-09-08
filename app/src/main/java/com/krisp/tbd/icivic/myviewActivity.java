@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.content.Intent;
+import android.widget.TextView;
 
 
 public class myviewActivity extends AppCompatActivity {
@@ -16,15 +17,14 @@ public class myviewActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_myview);
 
-        Button bn = (Button)findViewById(R.id.button3);
-
-        bn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent myintent = new Intent(myviewActivity.this, TagsFlow.class);
-                startActivity(myintent);
+        TextView text = (TextView) findViewById(R.id.textView2);
+        text.setOnClickListener(new View.OnClickListener(){
+            public void onClick(View w){
+                Intent intent = new Intent(myviewActivity.this, TagsFlow.class);
+                startActivity(intent);
             }
         });
+
 
     }
 
