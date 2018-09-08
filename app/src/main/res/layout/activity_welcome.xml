@@ -19,8 +19,11 @@
         android:id = "@+id/button1"
         android:layout_width = "wrap_content"
         android:layout_height = "wrap_content"
-        android:onClick = "login"
-        android:text = "@string/Login"
+        android:onClick = "transfer"
+        android:layout_marginBottom="50px"
+        android:layout_gravity="bottom"
+        android:text = "Log In"
+        android:layout_marginLeft="200px"
         />
 
 
