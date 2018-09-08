@@ -8,7 +8,7 @@ import android.widget.Button;
 import android.content.Intent;
 
 
-public class myviewActivity extends AppCompatActivity {
+public class myviewActivity extends AppCompatActivity{
 
     static final int REQUEST_IMAGE_CAPTURE = 1;
     @Override
@@ -16,13 +16,13 @@ public class myviewActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_myview);
 
-        Button bn = (Button)findViewById(R.id.button3);
+        Button ton = (Button)findViewById(R.id.button3);
 
-        bn.setOnClickListener(new View.OnClickListener() {
+        ton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent myintent = new Intent(myviewActivity.this, TagsFlow.class);
-                startActivity(myintent);
+                Intent bruh = new Intent(myviewActivity.this, TagsFlow.class);
+                startActivity(bruh);
             }
         });
 
