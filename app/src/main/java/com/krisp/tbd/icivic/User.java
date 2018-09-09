@@ -1,33 +1,29 @@
 package com.krisp.tbd.icivic;
 
 public class User {
-    private String name;
-    private String phoneNumber;
-    private String emailAddress;
+        String Displayname;
 
-    public User (String name, String phoneNumber, String emailAddress) {
-        this.name = name;
-        this.phoneNumber = phoneNumber;
-        this.emailAddress = emailAddress;
-    }
 
-    public String getName() {
-        return name;
-    }
+        String Email;
+        long createdAt;
 
-    public String getPhoneNumber() {
-        return phoneNumber;
-    }
+        public User (){};
+        public User(String displayname,String email,long createdAt){
+            this.Displayname=displayname;
+            this.Email=email;
+            this.createdAt=createdAt;
+        }
 
-    public String getEmailAddress() {
-        return emailAddress;
-    }
 
-    public void setPhoneNumber(String phoneNumber) {
-        this.phoneNumber = phoneNumber;
-    }
+        public String getDisplayname() {
+            return Displayname;
+        }
 
-    public void setEmailAddress(String emailAddress) {
-        this.emailAddress = emailAddress;
-    }
+        public String getEmail() {
+            return Email;
+        }
+
+        public long getCreatedAt() {
+            return createdAt;
+        }
 }

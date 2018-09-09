@@ -14,20 +14,20 @@ public class WelcomeActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_welcome);
 
-        Button btn = (Button)findViewById(R.id.button1);
+        Button login = (Button)findViewById(R.id.button1);
 
-        btn.setOnClickListener(new View.OnClickListener() {
+        login.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent myintent = new Intent(WelcomeActivity.this, LoginActivity.class);
+                Intent myintent = new Intent(WelcomeActivity.this, Login.class);
                 startActivity(myintent);
             }
         });
 
         //skip button temporary
-        Button skip = (Button)findViewById(R.id.skip);
+        Button signup = (Button)findViewById(R.id.skip);
 
-        skip.setOnClickListener(new View.OnClickListener() {
+        signup.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent change = new Intent(WelcomeActivity.this, Register.class);
