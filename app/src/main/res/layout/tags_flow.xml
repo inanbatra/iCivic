@@ -36,7 +36,7 @@ tools:context=".TagsFlow" >
     android:layout_marginBottom="145dp"
     android:fontFamily="sans-serif-smallcaps"
     android:text="My Home"
-    android:textSize="25dp" />
+    android:textSize="25dp" />  
 
 <!--When User hits "My Home"-->
 
