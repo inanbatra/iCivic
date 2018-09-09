@@ -36,9 +36,15 @@ tools:context=".TagsFlow" >
     android:layout_marginBottom="145dp"
     android:fontFamily="sans-serif-smallcaps"
     android:text="My Home"
-    android:textSize="25dp" />  
+    android:textSize="25dp" />
 
-<!--When User hits "My Home"-->
+
+    <!--When User hits "Our Parks"-->
+
+    <!--When User hits Our City"-->
+
+
+    <!--When User hits "My Home"-->
 
 <Button
     android:id="@+id/fire"
