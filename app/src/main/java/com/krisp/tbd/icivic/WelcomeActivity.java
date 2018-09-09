@@ -14,7 +14,7 @@ public class WelcomeActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_welcome);
 
-        Button btn = (Button)findViewById(R.id.button1);
+        Button btn = (Button)findViewById(R.id.login);
 
         btn.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -30,7 +30,7 @@ public class WelcomeActivity extends AppCompatActivity {
         skip.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent change = new Intent(WelcomeActivity.this, myviewActivity.class);
+                Intent change = new Intent(WelcomeActivity.this, Register.class);
                 startActivity(change);
             }
         });
