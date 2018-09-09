@@ -5,16 +5,14 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
+import android.content.Intent;
 
 public class TagsFlow extends AppCompatActivity implements View.OnClickListener{
     Button fork0;
     Button fork1;
     Button fork2;
 
-    Button home1;
-    Button home2;
     TextView txtView;
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState){
@@ -24,13 +22,8 @@ public class TagsFlow extends AppCompatActivity implements View.OnClickListener{
         fork1 = (Button) findViewById(R.id.city);
         fork2 = (Button) findViewById(R.id.home);
 
-        home1 = (Button) findViewById(R.id.fire);
-        home1.setVisibility(View.INVISIBLE);
+        txtView = (TextView) findViewById(R.id.alert);
 
-        home2 = (Button) findViewById(R.id.sewage);
-        home2.setVisibility(View.INVISIBLE);
-
-//        txtView = (TextView) findViewById(R.id.alert);
         fork0.setOnClickListener(this);
         fork1.setOnClickListener(this);
         fork2.setOnClickListener(this);
@@ -50,13 +43,10 @@ public class TagsFlow extends AppCompatActivity implements View.OnClickListener{
         }
 
         if(v.getId() == R.id.home) {
-            //code to execute
-            fork0.setVisibility(View.GONE);
-            fork1.setVisibility(View.GONE);
-            fork2.setVisibility(View.GONE);
-            home1.setVisibility(View.VISIBLE);
-            home2.setVisibility(View.VISIBLE);
+            Intent myIntent = new Intent(TagsFlow.this, MyHome.class);
+            TagsFlow.this.startActivity(myIntent);
         }
 
     }
 }
+
