@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.content.Intent;
+import android.widget.ImageButton;
 import android.widget.TextView;
 
 
@@ -17,7 +18,7 @@ public class myviewActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_myview);
 
-        Button btn = findViewById(R.id.imageView4);
+        ImageButton btn = findViewById(R.id.imageView4);
 
         btn.setOnClickListener(new View.OnClickListener() {
             @Override
