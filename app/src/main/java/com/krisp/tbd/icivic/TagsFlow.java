@@ -42,10 +42,10 @@ public class TagsFlow extends AppCompatActivity implements View.OnClickListener{
             txtView.setText("not park:(");
         }
 
-        if(v.getId() == R.id.home) {
+        /* if(v.getId() == R.id.home) {
             Intent myIntent = new Intent(TagsFlow.this, MyHome.class);
             TagsFlow.this.startActivity(myIntent);
-        }
+        } */
 
     }
 }
