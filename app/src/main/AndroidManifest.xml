@@ -8,7 +8,12 @@
     <uses-permission android:name="android.permission.GET_ACCOUNTS" />
     <uses-permission android:name="android.permission.READ_PROFILE" />
     <uses-permission android:name="android.permission.READ_CONTACTS" />
-
+    <!-- <uses-permission android:name="android.permission.camera2" /> -->
+    <!-- <uses-permission android:name="android.permission.CAMERA" /> -->
+    <!-- <uses-feature android:name="android.hardware.camera" /> -->
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="true" />
     <uses-feature
         android:name="android.hardware.camera2"
         android:required="true" />
@@ -29,11 +34,10 @@
         </activity>
         <activity android:name=".Register" />
         <activity android:name=".myviewActivity" />
-        <activity
-            android:name=".DashboardActivity"
-            android:label="@string/title_activity_dashboard"
-            android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name=".Login"></activity>
+
+        <activity android:name=".TagsFlow" />
+        <activity android:name=".MyHome" />
+        <activity android:name=".OurCity" />
     </application>
 
 </manifest>
