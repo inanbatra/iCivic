@@ -5,6 +5,7 @@ android:layout_width="match_parent"
 android:layout_height="match_parent"
 tools:context=".TagsFlow" >
 
+
     <Button
         android:id="@+id/parks"
         android:layout_width="202dp"
@@ -63,14 +64,16 @@ tools:context=".TagsFlow" >
         android:textSize="25dp" />
 
 
-
-    <!--<TextView-->
-<!--android:id="@+id/alert"-->
-<!--android:layout_width="match_parent"-->
-<!--android:layout_height="match_parent"-->
-<!--android:text=""-->
-<!--android:textColor="#000000"-->
-<!--android:textSize="25sp" />-->
+    <TextView
+        android:id="@+id/alert"
+        android:layout_width="209dp"
+        android:layout_height="78dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/parks"
+        android:layout_marginTop="36dp"
+        android:text=""
+        android:textColor="#000000"
+        android:textSize="25sp" />
 
 </RelativeLayout>
 
