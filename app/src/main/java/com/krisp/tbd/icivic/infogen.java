@@ -13,9 +13,9 @@ public class infogen extends AppCompatActivity {
         String nameform = "    Full Name     : ";
         String mailform = "  Email Address   : ";
         String imgrep =   "Image of Incident : ";
-        System.out.printf("%s %s", nameform, );
+        /* System.out.printf("%s %s", nameform, );
         System.out.printf("%s %s",mailform,  );
-        System.out.printf("%s %s",imgrep,  );
+        System.out.printf("%s %s",imgrep,  ); */
 
     }
 }

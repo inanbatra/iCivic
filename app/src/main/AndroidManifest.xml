@@ -32,8 +32,10 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".Login" />
         <activity android:name=".Register" />
         <activity android:name=".myviewActivity" />
+        <activity android:name=".Dashboard" />
 
         <activity android:name=".TagsFlow" />
         <activity android:name=".MyHome" />
