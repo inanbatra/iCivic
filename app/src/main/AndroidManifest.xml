@@ -32,6 +32,7 @@
             android:label="@string/title_activity_login" />
         <activity android:name=".Register" />
         <activity android:name=".myviewActivity" />
+        <activity android:name=".TagsFlow" />
     </application>
 
 </manifest>
