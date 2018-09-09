@@ -1,5 +1,6 @@
 package com.krisp.tbd.icivic;
 
+import android.support.annotation.IdRes;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -27,9 +28,19 @@ public class TagsFlow extends AppCompatActivity implements View.OnClickListener{
         //  fork0.setOnClickListener(this);
         fork1.setOnClickListener(this);
         fork2.setOnClickListener(this);
+
+        Button b = (Button) findViewById(R.id.button4);
+
+        b.setOnClickListener(new View.OnClickListener() {
+
+            public void onClick(View v) {
+                Intent myintent = new Intent(TagsFlow.this, Camera.class);
+                startActivity(myintent);
+            }
     }
 
-    @Override
+        );
+    }
     public void onClick(View v) { //when user clicks on fork0 or fork1, this method executed
 //        if(v.getId() == R.id.parks) {
 //            Intent myIntent = new Intent(TagsFlow.this, OurParks.class);
