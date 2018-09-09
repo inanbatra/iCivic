@@ -11,7 +11,7 @@ import android.content.Intent;
 
 
 public class CameraLayout extends AppCompatActivity {
-private static final int CAMERA_REQUEST = 1;
+private static final int CAMERA_REQUEST = 1888;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
