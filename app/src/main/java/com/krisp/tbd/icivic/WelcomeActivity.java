@@ -24,7 +24,7 @@ public class WelcomeActivity extends AppCompatActivity {
             }
         });
 
-        //skip button temporary
+        //skip button temporary//dfhirfh
         Button skip = (Button)findViewById(R.id.skip);
 
         skip.setOnClickListener(new View.OnClickListener() {
