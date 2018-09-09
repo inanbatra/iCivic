@@ -131,7 +131,7 @@ public class Register extends AppCompatActivity implements View.OnClickListener{
         return new User(
                 getName(),
                 getEmail(),
-                new Date().getTime()
+                new Date().getTime(), getphonen
         );
     }
 

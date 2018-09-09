@@ -7,11 +7,12 @@ public class User {
         String phonenumber;
 
 
-        public User (){};
-        public User(String displayname,String email,long createdAt){
+        public User() {};
+        public User(String displayname, String email, long createdAt, String phonenumber){
             this.Displayname = displayname;
             this.Email = email;
-            this.createdAt=createdAt;
+            this.createdAt = createdAt;
+            this.phonenumber = phonenumber;
         }
 
 
@@ -26,4 +27,6 @@ public class User {
         public long getCreatedAt() {
             return createdAt;
         }
+
+        public String getPhonenumber() { return phonenumber; }
 }
