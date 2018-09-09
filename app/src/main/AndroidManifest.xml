@@ -30,7 +30,7 @@
         <activity android:name=".Register" />
         <activity android:name=".myviewActivity" />
         <activity
-            android:name=".DashboardActivity"
+            android:name=".Dashboard"
             android:label="@string/title_activity_dashboard"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity android:name=".Login"></activity>

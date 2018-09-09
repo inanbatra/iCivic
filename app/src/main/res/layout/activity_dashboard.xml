@@ -9,7 +9,7 @@
     android:paddingLeft="16dp"
     android:paddingRight="16dp"
     android:paddingTop="16dp"
-    tools:context="com.krisp.tbd.icivic.DashboardActivity">
+    tools:context="com.krisp.tbd.icivic.Dashboard">
 
 
     <TextView

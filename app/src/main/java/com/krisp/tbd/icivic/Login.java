@@ -24,13 +24,13 @@ public class Login extends AppCompatActivity {
     EditText Email, Password;
     Button LogInButton, RegisterButton;
     FirebaseAuth mAuth;
-    FirebaseAuth.AuthStateListener mAuthListner;
+    FirebaseAuth.AuthStateListener mAuthListener;
     FirebaseUser mUser;
     String email, password;
     ProgressDialog dialog;
-    public static final String userEmail="";
+    public static final String userEmail = "";
 
-    public static final String TAG="LOGIN";
+    public static final String TAG = "LOGIN";
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -44,11 +44,11 @@ public class Login extends AppCompatActivity {
         dialog = new ProgressDialog(this);
         mAuth = FirebaseAuth.getInstance();
         mUser = FirebaseAuth.getInstance().getCurrentUser();
-        mAuthListner = new FirebaseAuth.AuthStateListener() {
+        mAuthListener = new FirebaseAuth.AuthStateListener() {
             @Override
             public void onAuthStateChanged(@NonNull FirebaseAuth firebaseAuth) {
                 if (mUser != null) {
-                    Intent intent = new Intent(Login.this, DashboardActivity.class);
+                    Intent intent = new Intent(Login.this, Dashboard.class);
                     intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
                     startActivity(intent);
                 }
@@ -80,15 +80,15 @@ public class Login extends AppCompatActivity {
     @Override
     protected void onStart() {
         super.onStart();
-        mAuth.removeAuthStateListener(mAuthListner);
+        mAuth.removeAuthStateListener(mAuthListener);
 
     }
 
     @Override
     protected void onStop() {
         super.onStop();
-        if (mAuthListner != null) {
-            mAuth.removeAuthStateListener(mAuthListner);
+        if (mAuthListener != null) {
+            mAuth.removeAuthStateListener(mAuthListener);
         }
 
     }
@@ -98,7 +98,26 @@ public class Login extends AppCompatActivity {
         Login.super.finish();
     }
 
+    private void checkIfEmailVerified(){
+        FirebaseUser users=FirebaseAuth.getInstance().getCurrentUser();
+        boolean emailVerified=users.isEmailVerified();
+        if(!emailVerified){
+            Toast.makeText(this,"Verify the email address",Toast.LENGTH_SHORT).show();
+            mAuth.signOut();
+            finish();
+        }
+        else {
+            Email.getText().clear();
 
+            Password.getText().clear();
+            Intent intent = new Intent(Login.this, Dashboard.class);
+
+            intent.putExtra(userEmail,email);
+
+            startActivity(intent);
+
+        }
+    }
 
     private void userSign() {
         email = Email.getText().toString().trim();
@@ -131,26 +150,6 @@ public class Login extends AppCompatActivity {
             }
         });
 
-    }
-    private void checkIfEmailVerified(){
-        FirebaseUser users=FirebaseAuth.getInstance().getCurrentUser();
-        boolean emailVerified=users.isEmailVerified();
-        if(!emailVerified){
-            Toast.makeText(this,"Verify the email address",Toast.LENGTH_SHORT).show();
-            mAuth.signOut();
-            finish();
-        }
-        else {
-            Email.getText().clear();
-
-            Password.getText().clear();
-            Intent intent = new Intent(Login.this, DashboardActivity.class);
-
-            intent.putExtra(userEmail,email);
-
-            startActivity(intent);
-
-        }
     }
 
 }

@@ -2,15 +2,15 @@ package com.krisp.tbd.icivic;
 
 public class User {
         String Displayname;
-
-
         String Email;
         long createdAt;
+        String phonenumber;
+
 
         public User (){};
         public User(String displayname,String email,long createdAt){
-            this.Displayname=displayname;
-            this.Email=email;
+            this.Displayname = displayname;
+            this.Email = email;
             this.createdAt=createdAt;
         }
 
