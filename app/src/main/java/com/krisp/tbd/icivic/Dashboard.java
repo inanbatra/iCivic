@@ -16,7 +16,7 @@ import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 
-public class DashboardActivity extends AppCompatActivity {
+public class Dashboard extends AppCompatActivity {
 
     String EmailHolder;
     TextView Email;
@@ -45,21 +45,7 @@ public class DashboardActivity extends AppCompatActivity {
 
                 finish();
 
-                Toast.makeText(DashboardActivity.this,"Log Out Successful", Toast.LENGTH_LONG).show();
-                //Intent intent=new Intent(DashboardActivity.this,login.class);
-                //startActivity(intent);
-               /*if (v.getId() == R.id.button1) {
-                    AuthUI.getInstance()
-                            .signOut(this)
-                            .addOnCompleteListener(new OnCompleteListener<Void>() {
-                                public void onComplete(@NonNull Task<Void> task) {
-                                    // user is now signed out
-                                    startActivity(new Intent(DashboardActivity.this, login.class));
-                                    finish();
-                                }
-                            });
-                }*/
-
+                Toast.makeText(Dashboard.this,"Log Out Successful", Toast.LENGTH_LONG).show();
             }
         });
 

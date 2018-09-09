@@ -15,7 +15,6 @@ import android.widget.Toast;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
-import com.google.firebase.auth.AuthCredential;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.database.DatabaseReference;
@@ -74,7 +73,7 @@ public class Register extends AppCompatActivity implements View.OnClickListener{
             Toast.makeText(Register.this, "Enter Password", Toast.LENGTH_SHORT).show();
             return;
         }else if (Password.length()<6){
-            Toast.makeText(Register.this,"Password must be greater then 6 digit",Toast.LENGTH_SHORT).show();
+            Toast.makeText(Register.this,"Password must be longer than 6 digits",Toast.LENGTH_SHORT).show();
             return;
         }
         mDialog.setMessage("Creating user; please wait...");
@@ -94,7 +93,6 @@ public class Register extends AppCompatActivity implements View.OnClickListener{
             }
         });
     }
-    //Email verification code using FirebaseUser object and using isSucccessful()function.
     private void sendEmailVerification() {
         FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
         if (user!=null){
@@ -114,6 +112,15 @@ public class Register extends AppCompatActivity implements View.OnClickListener{
         createAnewUser(user.getUid());
     }
 
+    public String getName() {
+        return Name;
+    }
+
+    public String getEmail() {
+        return Email;
+    }
+
+
     private void createAnewUser(String uid) {
         User user = BuildNewuser();
         mdatabase.child(uid).setValue(user);
@@ -122,20 +129,10 @@ public class Register extends AppCompatActivity implements View.OnClickListener{
 
     private User BuildNewuser(){
         return new User(
-                getDisplayName(),
-                getUserEmail(),
+                getName(),
+                getEmail(),
                 new Date().getTime()
         );
     }
 
-    @Exclude
-    public String getDisplayName() {
-        return Name;
-    }
-
-    public String getUserEmail() {
-        return Email;
-    }
-
 }
-
