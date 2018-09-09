@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".OurCity" >
+
+    <!--When User hits "Our City"-->
+
+    <Button
+        android:id="@+id/roads"
+        android:layout_width="202dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="197dp"
+        android:fontFamily="sans-serif-smallcaps"
+        android:text="Roadways and Safety"
+        android:textSize="25dp" />
+
+    <Button
+        android:id="@+id/aes"
+        android:layout_width="202dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="65dp"
+        android:fontFamily="sans-serif-smallcaps"
+        android:text="Graffeti or Illegal Dumping"
+        android:textSize="25dp" />
+
+    <Button
+        android:id="@+id/water"
+        android:layout_width="202dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="65dp"
+        android:fontFamily="sans-serif-smallcaps"
+        android:text="Water or Sewage"
+        android:textSize="25dp" />
+
+
+
+
+</RelativeLayout>

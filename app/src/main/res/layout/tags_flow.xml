@@ -5,16 +5,16 @@
     android:layout_height="match_parent"
     tools:context=".TagsFlow" >
 
-    <Button
-        android:id="@+id/parks"
-        android:layout_width="202dp"
-        android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="125dp"
-        android:fontFamily="sans-serif-smallcaps"
-        android:text="Our Parks"
-        android:textSize="25dp" />
+    <!--<Button-->
+    <!--android:id="@+id/parks"-->
+    <!--android:layout_width="202dp"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_alignParentTop="true"-->
+    <!--android:layout_centerHorizontal="true"-->
+    <!--android:layout_marginTop="125dp"-->
+    <!--android:fontFamily="sans-serif-smallcaps"-->
+    <!--android:text="Our Parks"-->
+    <!--android:textSize="25dp" />-->
 
     <Button
         android:id="@+id/city"
@@ -22,7 +22,10 @@
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="214dp"
+        android:background="@drawable/round_button"
+        android:gravity="center_vertical|center_horizontal"
+        android:textColor="#000000"
+        android:layout_marginTop="144dp"
         android:fontFamily="sans-serif-smallcaps"
         android:text="Our City"
         android:textSize="25dp" />
@@ -31,9 +34,10 @@
         android:id="@+id/home"
         android:layout_width="202dp"
         android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="145dp"
+        android:layout_centerInParent="true"
+        android:background="@drawable/round_button"
+        android:gravity="center_vertical|center_horizontal"
+        android:textColor="#000000"
         android:fontFamily="sans-serif-smallcaps"
         android:text="My Home"
         android:textSize="25dp" />
@@ -50,4 +54,3 @@
         android:textSize="25sp" />
 
 </RelativeLayout>
-
