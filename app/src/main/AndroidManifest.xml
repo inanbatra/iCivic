@@ -32,6 +32,7 @@
         <activity android:name=".Register" />
         <activity android:name=".myviewActivity" />
         <activity android:name=".TagsFlow" />
+        <activity android:name=".MyHome" />
     </application>
 
 </manifest>
