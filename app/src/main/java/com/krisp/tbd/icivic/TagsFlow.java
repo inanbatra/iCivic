@@ -31,15 +31,14 @@ public class TagsFlow extends AppCompatActivity implements View.OnClickListener{
 
         Button b = (Button) findViewById(R.id.button4);
 
-        b.setOnClickListener(new View.OnClickListener() {
-
-            public void onClick(View v) {
-                Intent myintent = new Intent(TagsFlow.this, Camera.class);
-                startActivity(myintent);
-            }
-    }
-
-        );
+//        b.setOnClickListener(new View.OnClickListener() {
+//
+//            public void onClick(View v) {
+//                Intent myintent = new Intent(TagsFlow.this, Camera.class);
+//                startActivity(myintent);
+//            }
+//    }
+// ;
     }
     public void onClick(View v) { //when user clicks on fork0 or fork1, this method executed
 //        if(v.getId() == R.id.parks) {

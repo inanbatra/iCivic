@@ -8,8 +8,12 @@
     <uses-permission android:name="android.permission.GET_ACCOUNTS" />
     <uses-permission android:name="android.permission.READ_PROFILE" />
     <uses-permission android:name="android.permission.READ_CONTACTS" />
-    <uses-permission android:name="android.permission.camera2" />
-
+    <!-- <uses-permission android:name="android.permission.camera2" /> -->
+    <!-- <uses-permission android:name="android.permission.CAMERA" /> -->
+    <!-- <uses-feature android:name="android.hardware.camera" /> -->
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="true" />
     <uses-feature
         android:name="android.hardware.camera2"
         android:required="true" />
@@ -35,14 +39,16 @@
         <activity android:name=".myviewActivity" />
         <activity android:name=".TagsFlow" />
         <activity android:name=".MyHome" />
-
         <activity android:name=".OurCity" />
-
         <activity
             android:name=".Camera"
             android:label="@string/title_activity_camera"
-            android:theme="@style/AppTheme.NoActionBar"/>
-
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".FragCamera"
+            android:label="@string/title_activity_frag_camera"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".infogen"></activity>
     </application>
 
 </manifest>
