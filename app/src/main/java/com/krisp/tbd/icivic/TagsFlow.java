@@ -40,10 +40,10 @@ public class TagsFlow extends AppCompatActivity implements View.OnClickListener{
             TagsFlow.this.startActivity(myIntent);
         }
 
-        if(v.getId() == R.id.home) {
+        /* if(v.getId() == R.id.home) {
             Intent myIntent = new Intent(TagsFlow.this, MyHome.class);
             TagsFlow.this.startActivity(myIntent);
-        }
+        } */
 
     }
 }
